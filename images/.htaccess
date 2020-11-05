@@ -1,0 +1,5 @@
+<IfModule mod_headers.c>
+  <FilesMatch "(?i)^.*\.(jpg|jpeg|png)$">
+  Header set Cache-Control "max-age=0"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mpstore</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<!--  -->
+	<div class="simpleslide100">
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
+	</div>
+
+	<div class="size1 overlay1">
+		<!--  -->
+		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-30 p-b-30">
+				<img src="images/logo mp store 7.png" class="logo1" alt="MPSTORE" style="width: 10%; height: auto;">
+			
+
+			<p class="m2-txt1 txt-center p-b-30">
+				Assalamualaikum Wr. Wb.<br>
+				Selamat datang di website mpstore<br>
+				Saat ini website dalam proses pembangunan dan kami akan LIVE dengan fitur-fitur terbaik segera.
+			</p>
+
+			<div class="flex-w flex-c-m cd100 p-b-20">
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 days" id="hari">00</span>
+					<span class="s2-txt1">Days</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 hours" id="jam">00</span>
+					<span class="s2-txt1">Hours</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 minutes" id="menit">00</span>
+					<span class="s2-txt1">Minutes</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 seconds" id="detik">00</span>
+					<span class="s2-txt1">Seconds</span>
+				</div>
+			</div>
+			
+			<p class="m2-txt1 txt-center p-b-30">
+                Untuk mendapatkan Privilege Membership Anda harus mengikuti program Sekolah Online Muslim Preneurship. 
+			</p>
+
+			<form class="w-full flex-w flex-c-m validate-form m-b-20">
+				<a href="https://bit.ly/daftarmuslimpreneurship" type="button" class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1">
+					Bismillah Saya Daftar
+				</a>
+			</form>
+
+			<div class="w-full flex-w flex-c-m validate-form">
+				<a href="https://muslimpreneurship.com">
+					<img src="images/logo_web.png" class="sosmed  m-l-15 m-r-15 m-b-15">
+				</a>
+				<a href="https://instagram.com/muslimpreneurship">
+					<img src="images/logo_ig.png" class="sosmed m-l-15 m-r-15 m-b-15">
+				</a>
+				<a href="https://facebook.com/muslimpreneurship">
+					<img src="images/logo_fb.png" class="sosmed m-l-15 m-r-15 m-b-15">
+				</a>
+				<a href="https://www.youtube.com/channel/UCQDK7E6MSa_OtJ2D3RHPeZA">
+					<img src="images/logo_youtube.png" class="sosmed m-l-15 m-r-15 m-b-15">
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+
+		var countDownDate = new Date("Feb 1, 2020 00:00:00").getTime();
+		var x = setInterval(function() {
+		  var now = new Date().getTime();
+		  var distance = countDownDate - now;
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		  document.getElementById("hari").innerHTML = days;
+		  document.getElementById("jam").innerHTML = hours;
+		  document.getElementById("menit").innerHTML = minutes;
+		  document.getElementById("detik").innerHTML = seconds;
+		}, 1000);
+
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
