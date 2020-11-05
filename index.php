@@ -23,15 +23,6 @@ $ecbk6 = encrypt_decrypt('encrypt', $b_k[6]['id_kategori']);
 
 $b2landing = $koneksi->query("SELECT * FROM banner2landing");
 $b2l = $b2landing->fetch_assoc();
-// $b2lpro = $b2l['id_produk'];
-// $dapatStok = $koneksi->query("SELECT * FROM produk WHERE id_produk = '$b2lpro'");
-// $pecahStok = $dapatStok->fetch_assoc();
-// if ($pecahStok['stok'] > 0){
-// 	$linkDaftar = "mpadmin/pendaftaran?so=".$b2lpro;
-// }
-// else {
-// 	echo "<script>alert('Maaf Pendaftaran Ditutup');</script>";
-// }
 
 ?>
 
@@ -91,78 +82,6 @@ $b2l = $b2landing->fetch_assoc();
 ?>
 	<!-- Banner Kategori -->
 <section class="bgwhite">
-	<!-- <section class="banner p-t-40 p-b-40">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[1]['foto_bk']; ?>?nocache=<?php echo time(); ?>" class="" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-						
-							<a href="product?ct=<?php echo $ecbk1 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[1]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[2]['foto_bk']; ?>?nocache=<?php echo time(); ?>" class="" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-							<a href="product?ct=<?php echo $ecbk2 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[2]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[3]['foto_bk']; ?>?nocache=<?php echo time(); ?>" class="" alt="IMG-BENNER">
-
-						<div class="block1-wrapbtn w-size2">
-							<a href="product?ct=<?php echo $ecbk3 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[3]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[4]['foto_bk']; ?>?nocache=<?php echo time(); ?>" alt="IMG-BENNER">
-
-						<div class="block1-wrapbtn w-size2">
-							<a href="product?ct=<?php echo $ecbk4 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[4]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[5]['foto_bk']; ?>?nocache=<?php echo time(); ?>" alt="IMG-BENNER">
-
-						<div class="block1-wrapbtn w-size2">
-							<a href="product?ct=<?php echo $ecbk5 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[5]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-					
-					<div class="hov-img-zoom pos-relative m-b-30">
-						<img src="images/produk/banner_kategori/<?php echo $b_k[6]['foto_bk']; ?>?nocache=<?php echo time(); ?>" class="" alt="IMG-BENNER">
-
-						<div class="block1-wrapbtn w-size2">
-							<a href="product?ct=<?php echo $ecbk6 ?>" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								<?php echo $b_k[6]['tombol_bk']; ?>
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- Close Banner Kategori -->
 
 	<!-- New Banner Kategori -->
 	<section class="newproduct bgwhite p-t-45 p-b-105">
@@ -392,19 +311,6 @@ $b2l = $b2landing->fetch_assoc();
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
 	<script type="text/javascript">
-		// $('.block2-btn-addcart').each(function(){
-			
-		// 	var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			
-		// 	$(this).on('click', function(){
-		// 		swal(nameProduct, "is added to cart !", "success");
-
-		// 			// location = 'beli_produk.php';
-
-				
-		// 	});
-		// });
-
 		$('.block2-btn-addwishlist').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function(){
